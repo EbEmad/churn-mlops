@@ -7,4 +7,5 @@ services:
       - "8888:8888"
     volumes:
       - ./notebooks:/app/notebooks
+      - ./models:/app/models
     container_name: python_notebook
