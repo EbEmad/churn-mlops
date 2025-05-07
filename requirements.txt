@@ -5,3 +5,9 @@ seaborn
 scikit-learn
 xgboost
 jupyter
+uvicorn
+gunicorn
+requests
+pydantic
+sqlmodel
+fastapi[standard]==0.115.11

@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y \
 WORKDIR /app
 
 # COPY DATA
-COPY ./Data /app/Data
+COPY . /app
 
 # Copy requirements file and install dependencies
 COPY requirements.txt /app/
@@ -24,6 +24,6 @@ RUN pip install --upgrade pip && pip install -r requirements.txt
 
 # Expose port for Jupyter
 EXPOSE 8888
-
+RUN chmod +x run.sh
 # Command to start Jupyter
-CMD ["jupyter", "notebook", "--ip=0.0.0.0", "--port=8888", "--allow-root", "--no-browser", "--NotebookApp.token=''", "--NotebookApp.password=''"]
+CMD [ "bash","run.sh" ]
