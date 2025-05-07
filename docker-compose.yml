@@ -9,4 +9,6 @@ services:
     volumes:
       - ./notebooks:/app/notebooks
       - ./models:/app/models
+      - ./scripts:/app/scripts
+      - ./Data:/app/Data
     container_name: python_notebook
