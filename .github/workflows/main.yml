@@ -1,0 +1,25 @@
+# this is a simple workflow to help to start
+
+name: trigger
+
+on: push
+# a work flow is made up of one or more jobs that can run
+jobs:
+  # this workflow contains a single job called build
+  build:
+    runs-on: ubuntu:latest
+
+    # what should run inside the ruinner
+    steps:
+      # check out your repo 
+      - uses: actions/checkout@v2
+
+      # runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo hello hema!
+      # run a set of command using the runners shell
+      - name: Run a set of commands using the runners shell
+        run: |
+          echo thank you for your efforts
+          echo you are doing great
+  
