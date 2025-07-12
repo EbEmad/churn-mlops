@@ -1,0 +1,59 @@
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    networks:
+      - scraping
+
+  webserver:
+    build: .
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - AIRFLOW__WEBSERVER__SECRET_KEY=mysecretkey
+      - AIRFLOW__CORE__FERNET_KEY=GgyJ5jUehSy2zQqY958eUWW1ezEgNp4OerBy-AKuD14=
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./config:/opt/airflow/config
+      - ./plugins:/opt/airflow/plugins
+      - ../notebooks:/opt/airflow/scripts
+      - ../Data:/opt/airflow/Data
+      - ../models:/opt/airflow/models
+      - /var/run/docker.sock:/var/run/docker.sock
+    user: "0:0"
+    ports:
+      - "8080:8080"
+    entrypoint: /run.sh
+    command: webserver
+    networks:
+      - scraping
+
+  scheduler:
+    build: .
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - AIRFLOW__WEBSERVER__SECRET_KEY=mysecretkey
+      - AIRFLOW__CORE__FERNET_KEY=GgyJ5jUehSy2zQqY958eUWW1ezEgNp4OerBy-AKuD14=
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./config:/opt/airflow/config
+      - ./plugins:/opt/airflow/plugins
+      - ../notebooks:/opt/airflow/scripts
+      - ../Data:/opt/airflow/Data
+      - ../models:/opt/airflow/models
+      - /var/run/docker.sock:/var/run/docker.sock
+    user: "0:0"
+    entrypoint: /run.sh
+    command: scheduler
+    networks:
+      - scraping
+
+networks:
+  scraping:
+    driver: bridge

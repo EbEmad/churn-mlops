@@ -1,0 +1,689 @@
+[2025-07-11T19:17:40.888+0000] {processor.py:161} INFO - Started process (PID=183) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:17:40.889+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:17:40.890+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:17:40.890+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:17:40.896+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:17:40.895+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 25, in <module>
+    training_task = DockerOperator(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 467, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'image'
+[2025-07-11T19:17:40.896+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:17:40.909+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.024 seconds
+[2025-07-11T19:18:11.059+0000] {processor.py:161} INFO - Started process (PID=188) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:18:11.061+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:18:11.063+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:18:11.062+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:18:11.079+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:18:11.077+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 25, in <module>
+    training_task = DockerOperator(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 467, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'image'
+[2025-07-11T19:18:11.079+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:18:11.110+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.061 seconds
+[2025-07-11T19:18:41.241+0000] {processor.py:161} INFO - Started process (PID=193) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:18:41.242+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:18:41.246+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:18:41.246+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:18:41.257+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:18:41.256+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 25, in <module>
+    training_task = DockerOperator(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 467, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'image'
+[2025-07-11T19:18:41.257+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:18:41.284+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.052 seconds
+[2025-07-11T19:19:11.449+0000] {processor.py:161} INFO - Started process (PID=198) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:19:11.458+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:19:11.461+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:19:11.460+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:19:11.470+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:19:11.468+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 25, in <module>
+    training_task = DockerOperator(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 467, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'image'
+[2025-07-11T19:19:11.470+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:19:11.496+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.055 seconds
+[2025-07-11T19:19:21.520+0000] {processor.py:161} INFO - Started process (PID=203) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:19:21.529+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:19:21.532+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:19:21.532+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:19:21.545+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:19:21.543+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 25, in <module>
+    training_task = DockerOperator(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 467, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'image'
+[2025-07-11T19:19:21.545+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:19:21.574+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.064 seconds
+[2025-07-11T19:19:51.730+0000] {processor.py:161} INFO - Started process (PID=208) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:19:51.739+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:19:51.742+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:19:51.742+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:19:51.754+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:19:51.752+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 25, in <module>
+    training_task = DockerOperator(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 467, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'image'
+[2025-07-11T19:19:51.754+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:19:51.785+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.065 seconds
+[2025-07-11T19:20:21.899+0000] {processor.py:161} INFO - Started process (PID=213) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:20:21.908+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:20:21.912+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:20:21.911+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:20:21.922+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:20:21.921+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 25, in <module>
+    training_task = DockerOperator(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 467, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'image'
+[2025-07-11T19:20:21.923+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:20:21.950+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.061 seconds
+[2025-07-11T19:20:52.113+0000] {processor.py:161} INFO - Started process (PID=218) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:20:52.123+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:20:52.125+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:20:52.125+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:20:52.139+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:20:52.136+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 25, in <module>
+    training_task = DockerOperator(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 467, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'image'
+[2025-07-11T19:20:52.139+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:20:52.167+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.063 seconds
+[2025-07-11T19:21:22.291+0000] {processor.py:161} INFO - Started process (PID=223) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:21:22.293+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:21:22.296+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:21:22.295+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:21:22.307+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:21:22.305+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 25, in <module>
+    training_task = DockerOperator(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 467, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'image'
+[2025-07-11T19:21:22.308+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:21:22.335+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.054 seconds
+[2025-07-11T19:21:47.478+0000] {processor.py:161} INFO - Started process (PID=228) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:21:47.480+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:21:47.482+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:21:47.481+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:21:47.496+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:21:47.494+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 25, in <module>
+    training_task = DockerOperator(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/providers/docker/operators/docker.py", line 272, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 881, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: training_task). Invalid arguments were:
+**kwargs: {'volumes': ['/opt/airflow/scripts:/opt/airflow/scripts']}
+[2025-07-11T19:21:47.496+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:21:47.525+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.056 seconds
+[2025-07-11T19:22:17.652+0000] {processor.py:161} INFO - Started process (PID=233) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:22:17.662+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:22:17.665+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:22:17.665+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:22:17.676+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:22:17.674+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 25, in <module>
+    training_task = DockerOperator(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/providers/docker/operators/docker.py", line 272, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 881, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: training_task). Invalid arguments were:
+**kwargs: {'volumes': ['/opt/airflow/scripts:/opt/airflow/scripts']}
+[2025-07-11T19:22:17.677+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:22:17.709+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.066 seconds
+[2025-07-11T19:22:21.727+0000] {processor.py:161} INFO - Started process (PID=238) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:22:21.728+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:22:21.731+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:22:21.730+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:22:21.744+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:22:21.742+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 25, in <module>
+    training_task = DockerOperator(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/providers/docker/operators/docker.py", line 272, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 881, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: training_task). Invalid arguments were:
+**kwargs: {'volumes': ['/opt/airflow/scripts:/opt/airflow/scripts']}
+[2025-07-11T19:22:21.745+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:22:21.772+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.056 seconds
+[2025-07-11T19:22:25.802+0000] {processor.py:161} INFO - Started process (PID=243) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:22:25.804+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:22:25.806+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:22:25.806+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:22:25.818+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:22:25.817+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 25, in <module>
+    training_task = DockerOperator(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/providers/docker/operators/docker.py", line 272, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 881, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: training_task). Invalid arguments were:
+**kwargs: {'volumes': ['/opt/airflow/scripts:/opt/airflow/scripts']}
+[2025-07-11T19:22:25.819+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:22:25.846+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.053 seconds
+[2025-07-11T19:22:56.028+0000] {processor.py:161} INFO - Started process (PID=248) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:22:56.037+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:22:56.040+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:22:56.039+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:22:56.052+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:22:56.049+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 25, in <module>
+    training_task = DockerOperator(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/providers/docker/operators/docker.py", line 272, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 881, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: training_task). Invalid arguments were:
+**kwargs: {'volumes': ['/opt/airflow/scripts:/opt/airflow/scripts']}
+[2025-07-11T19:22:56.052+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:22:56.083+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.065 seconds
+[2025-07-11T19:23:26.196+0000] {processor.py:161} INFO - Started process (PID=253) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:23:26.206+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:23:26.209+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:23:26.208+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:23:26.221+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:23:26.218+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 25, in <module>
+    training_task = DockerOperator(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/providers/docker/operators/docker.py", line 272, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 881, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: training_task). Invalid arguments were:
+**kwargs: {'volumes': ['/opt/airflow/scripts:/opt/airflow/scripts']}
+[2025-07-11T19:23:26.221+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:23:26.250+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.065 seconds
+[2025-07-11T19:23:49.374+0000] {processor.py:161} INFO - Started process (PID=258) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:23:49.383+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:23:49.387+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:23:49.386+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:23:49.401+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:23:49.399+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 25, in <module>
+    training_task = DockerOperator(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/providers/docker/operators/docker.py", line 272, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 881, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: training_task). Invalid arguments were:
+**kwargs: {'volumes': ['../notebooks:/opt/airflow/scripts']}
+[2025-07-11T19:23:49.402+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:23:49.431+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.066 seconds
+[2025-07-11T19:24:19.552+0000] {processor.py:161} INFO - Started process (PID=263) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:24:19.562+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:24:19.565+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:24:19.564+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:24:19.575+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:24:19.574+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 25, in <module>
+    training_task = DockerOperator(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/providers/docker/operators/docker.py", line 272, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 881, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: training_task). Invalid arguments were:
+**kwargs: {'volumes': ['../notebooks:/opt/airflow/scripts']}
+[2025-07-11T19:24:19.576+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:24:19.602+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.063 seconds
+[2025-07-11T19:24:49.754+0000] {processor.py:161} INFO - Started process (PID=268) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:24:49.763+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:24:49.766+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:24:49.765+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:24:49.776+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:24:49.775+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/ml_pipeline.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 883, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "/opt/airflow/dags/ml_pipeline.py", line 25, in <module>
+    training_task = DockerOperator(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/providers/docker/operators/docker.py", line 272, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 484, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 881, in __init__
+    raise AirflowException(
+airflow.exceptions.AirflowException: Invalid arguments were passed to DockerOperator (task_id: training_task). Invalid arguments were:
+**kwargs: {'volumes': ['../notebooks:/opt/airflow/scripts']}
+[2025-07-11T19:24:49.777+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:24:49.806+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.060 seconds
+[2025-07-11T19:24:57.823+0000] {processor.py:161} INFO - Started process (PID=273) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:24:57.833+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:24:57.835+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:24:57.835+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:24:57.856+0000] {processor.py:840} INFO - DAG(s) 'ml_pipeline' retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:24:58.060+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:24:58.059+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:ml_pipeline
+[2025-07-11T19:24:58.076+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:24:58.076+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:ml_pipeline
+[2025-07-11T19:24:58.086+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:24:58.085+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:ml_pipeline
+[2025-07-11T19:24:58.086+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:24:58.086+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-11T19:24:58.105+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:24:58.105+0000] {dag.py:3118} INFO - Creating ORM DAG for ml_pipeline
+[2025-07-11T19:24:58.122+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:24:58.121+0000] {dag.py:3954} INFO - Setting next_dagrun for ml_pipeline to 2025-07-11 00:00:00+00:00, run_after=2025-07-12 00:00:00+00:00
+[2025-07-11T19:24:58.154+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.342 seconds
+[2025-07-11T19:25:28.340+0000] {processor.py:161} INFO - Started process (PID=283) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:25:28.350+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:25:28.353+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:25:28.352+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:25:28.374+0000] {processor.py:840} INFO - DAG(s) 'ml_pipeline' retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:25:28.414+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:25:28.414+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-11T19:25:28.448+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:25:28.448+0000] {dag.py:3954} INFO - Setting next_dagrun for ml_pipeline to 2025-07-11 00:00:00+00:00, run_after=2025-07-12 00:00:00+00:00
+[2025-07-11T19:25:28.494+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.165 seconds
+[2025-07-11T19:25:58.687+0000] {processor.py:161} INFO - Started process (PID=288) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:25:58.697+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:25:58.700+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:25:58.699+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:25:58.722+0000] {processor.py:840} INFO - DAG(s) 'ml_pipeline' retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:25:58.774+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:25:58.773+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-11T19:25:58.813+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:25:58.813+0000] {dag.py:3954} INFO - Setting next_dagrun for ml_pipeline to 2025-07-11 00:00:00+00:00, run_after=2025-07-12 00:00:00+00:00
+[2025-07-11T19:25:58.857+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.182 seconds
+[2025-07-11T19:26:52.933+0000] {processor.py:161} INFO - Started process (PID=183) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:26:52.934+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:26:52.935+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:26:52.935+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:26:52.943+0000] {processor.py:840} INFO - DAG(s) 'ml_pipeline' retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:26:53.052+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:26:53.051+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:ml_pipeline
+[2025-07-11T19:26:53.063+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:26:53.062+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:ml_pipeline
+[2025-07-11T19:26:53.071+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:26:53.070+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:ml_pipeline
+[2025-07-11T19:26:53.071+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:26:53.071+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-11T19:26:53.083+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:26:53.082+0000] {dag.py:3118} INFO - Creating ORM DAG for ml_pipeline
+[2025-07-11T19:26:53.094+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:26:53.094+0000] {dag.py:3954} INFO - Setting next_dagrun for ml_pipeline to 2025-07-11 00:00:00+00:00, run_after=2025-07-12 00:00:00+00:00
+[2025-07-11T19:26:53.111+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.183 seconds
+[2025-07-11T19:27:23.257+0000] {processor.py:161} INFO - Started process (PID=188) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:27:23.258+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:27:23.261+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:27:23.261+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:27:23.277+0000] {processor.py:840} INFO - DAG(s) 'ml_pipeline' retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:27:23.322+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:27:23.322+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-11T19:27:23.360+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:27:23.359+0000] {dag.py:3954} INFO - Setting next_dagrun for ml_pipeline to 2025-07-11 00:00:00+00:00, run_after=2025-07-12 00:00:00+00:00
+[2025-07-11T19:27:23.388+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.140 seconds
+[2025-07-11T19:27:53.575+0000] {processor.py:161} INFO - Started process (PID=198) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:27:53.577+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:27:53.579+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:27:53.579+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:27:53.599+0000] {processor.py:840} INFO - DAG(s) 'ml_pipeline' retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:27:53.637+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:27:53.637+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-11T19:27:53.670+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:27:53.669+0000] {dag.py:3954} INFO - Setting next_dagrun for ml_pipeline to 2025-07-11 00:00:00+00:00, run_after=2025-07-12 00:00:00+00:00
+[2025-07-11T19:27:53.699+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.134 seconds
+[2025-07-11T19:27:59.619+0000] {processor.py:161} INFO - Started process (PID=203) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:27:59.629+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:27:59.632+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:27:59.631+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:27:59.650+0000] {processor.py:840} INFO - DAG(s) 'ml_pipeline' retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:27:59.821+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:27:59.821+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-11T19:27:59.852+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:27:59.852+0000] {dag.py:3954} INFO - Setting next_dagrun for ml_pipeline to 2025-07-11 00:00:00+00:00, run_after=2025-07-12 00:00:00+00:00
+[2025-07-11T19:27:59.892+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.283 seconds
+[2025-07-11T19:28:06.966+0000] {processor.py:161} INFO - Started process (PID=208) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:28:06.968+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:28:06.970+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:28:06.970+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:28:06.988+0000] {processor.py:840} INFO - DAG(s) 'ml_pipeline' retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:28:07.007+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:28:07.007+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-11T19:28:07.044+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:28:07.043+0000] {dag.py:3954} INFO - Setting next_dagrun for ml_pipeline to 2025-07-11 00:00:00+00:00, run_after=2025-07-12 00:00:00+00:00
+[2025-07-11T19:28:07.072+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.116 seconds
+[2025-07-11T19:28:08.988+0000] {processor.py:161} INFO - Started process (PID=213) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:28:08.989+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:28:08.991+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:28:08.991+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:28:09.008+0000] {processor.py:840} INFO - DAG(s) 'ml_pipeline' retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:28:09.027+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:28:09.026+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-11T19:28:09.058+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:28:09.058+0000] {dag.py:3954} INFO - Setting next_dagrun for ml_pipeline to 2025-07-11 00:00:00+00:00, run_after=2025-07-12 00:00:00+00:00
+[2025-07-11T19:28:09.083+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.103 seconds
+[2025-07-11T19:28:19.051+0000] {processor.py:161} INFO - Started process (PID=218) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:28:19.052+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:28:19.055+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:28:19.055+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:28:19.073+0000] {processor.py:840} INFO - DAG(s) 'ml_pipelinev1' retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:28:19.242+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:28:19.241+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:ml_pipelinev1
+[2025-07-11T19:28:19.257+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:28:19.256+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:ml_pipelinev1
+[2025-07-11T19:28:19.267+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:28:19.267+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:ml_pipelinev1
+[2025-07-11T19:28:19.268+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:28:19.267+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-11T19:28:19.284+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:28:19.284+0000] {dag.py:3118} INFO - Creating ORM DAG for ml_pipelinev1
+[2025-07-11T19:28:19.301+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:28:19.300+0000] {dag.py:3954} INFO - Setting next_dagrun for ml_pipelinev1 to 2025-07-11 00:00:00+00:00, run_after=2025-07-12 00:00:00+00:00
+[2025-07-11T19:28:19.329+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.288 seconds
+[2025-07-11T19:28:49.337+0000] {processor.py:161} INFO - Started process (PID=228) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:28:49.346+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:28:49.348+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:28:49.348+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:28:49.369+0000] {processor.py:840} INFO - DAG(s) 'ml_pipelinev1' retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:28:49.529+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:28:49.529+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-11T19:28:49.560+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:28:49.560+0000] {dag.py:3954} INFO - Setting next_dagrun for ml_pipelinev1 to 2025-07-11 00:00:00+00:00, run_after=2025-07-12 00:00:00+00:00
+[2025-07-11T19:28:49.601+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.274 seconds
+[2025-07-11T19:29:13.653+0000] {processor.py:161} INFO - Started process (PID=233) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:29:13.662+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:29:13.666+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:29:13.665+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:29:13.685+0000] {processor.py:840} INFO - DAG(s) 'ml_pipelinev1' retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:29:13.704+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:29:13.704+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-11T19:29:13.743+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:29:13.742+0000] {dag.py:3954} INFO - Setting next_dagrun for ml_pipelinev1 to 2025-07-11 00:00:00+00:00, run_after=2025-07-12 00:00:00+00:00
+[2025-07-11T19:29:13.776+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.134 seconds
+[2025-07-11T19:29:14.767+0000] {processor.py:161} INFO - Started process (PID=238) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:29:14.768+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:29:14.772+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:29:14.771+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:29:14.791+0000] {processor.py:840} INFO - DAG(s) 'ml_pipelinev1' retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:29:14.813+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:29:14.812+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-11T19:29:14.851+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:29:14.850+0000] {dag.py:3954} INFO - Setting next_dagrun for ml_pipelinev1 to 2025-07-11 00:00:00+00:00, run_after=2025-07-12 00:00:00+00:00
+[2025-07-11T19:29:14.884+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.126 seconds
+[2025-07-11T19:29:15.846+0000] {processor.py:161} INFO - Started process (PID=243) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:29:15.847+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:29:15.850+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:29:15.850+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:29:15.875+0000] {processor.py:840} INFO - DAG(s) 'ml_pipelinev1' retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:29:15.901+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:29:15.900+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-11T19:29:15.948+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:29:15.948+0000] {dag.py:3954} INFO - Setting next_dagrun for ml_pipelinev1 to 2025-07-11 00:00:00+00:00, run_after=2025-07-12 00:00:00+00:00
+[2025-07-11T19:29:15.986+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.154 seconds
+[2025-07-11T19:29:24.989+0000] {processor.py:161} INFO - Started process (PID=248) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:29:24.999+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:29:25.001+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:29:25.001+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:29:25.020+0000] {processor.py:840} INFO - DAG(s) 'ml_pipeline' retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:29:25.182+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:29:25.181+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-11T19:29:25.216+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:29:25.215+0000] {dag.py:3954} INFO - Setting next_dagrun for ml_pipeline to 2025-07-11 00:00:00+00:00, run_after=2025-07-12 00:00:00+00:00
+[2025-07-11T19:29:25.246+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.266 seconds
+[2025-07-11T19:29:55.429+0000] {processor.py:161} INFO - Started process (PID=258) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:29:55.437+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:29:55.440+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:29:55.440+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:29:55.460+0000] {processor.py:840} INFO - DAG(s) 'ml_pipeline' retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:29:55.503+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:29:55.502+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-11T19:29:55.540+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:29:55.539+0000] {dag.py:3954} INFO - Setting next_dagrun for ml_pipeline to 2025-07-11 00:00:00+00:00, run_after=2025-07-12 00:00:00+00:00
+[2025-07-11T19:29:55.589+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.170 seconds
+[2025-07-11T19:30:25.784+0000] {processor.py:161} INFO - Started process (PID=263) to work on /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:30:25.786+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/ml_pipeline.py for tasks to queue
+[2025-07-11T19:30:25.791+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:30:25.790+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:30:25.815+0000] {processor.py:840} INFO - DAG(s) 'ml_pipeline' retrieved from /opt/airflow/dags/ml_pipeline.py
+[2025-07-11T19:30:25.864+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:30:25.864+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-11T19:30:25.914+0000] {logging_mixin.py:188} INFO - [2025-07-11T19:30:25.913+0000] {dag.py:3954} INFO - Setting next_dagrun for ml_pipeline to 2025-07-11 00:00:00+00:00, run_after=2025-07-12 00:00:00+00:00
+[2025-07-11T19:30:25.979+0000] {processor.py:876} ERROR - Error logging import errors!
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 936, in _checkout
+    raise exc.InvalidatePoolError()
+sqlalchemy.exc.InvalidatePoolError: ()
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 970, in _checkout
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 967, in _checkout
+    fairy._connection_record.get_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 630, in get_connection
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "postgres" (172.21.0.2), port 5432 failed: FATAL:  the database system is shutting down
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 869, in process_file
+    DagFileProcessor.update_import_errors(
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/api_internal/internal_api_call.py", line 115, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 615, in update_import_errors
+    session.execute(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/future/engine.py", line 412, in connect
+    return super(Engine, self).connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 970, in _checkout
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 967, in _checkout
+    fairy._connection_record.get_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 630, in get_connection
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at "postgres" (172.21.0.2), port 5432 failed: FATAL:  the database system is shutting down
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2025-07-11T19:30:25.995+0000] {processor.py:882} ERROR - Error logging DAG warnings.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 497, in checkout
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    dbapi_connection = rec.get_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 630, in get_connection
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+psycopg2.OperationalError: connection to server at "postgres" (172.21.0.2), port 5432 failed: FATAL:  the database system is shutting down
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 880, in process_file
+    self.update_dag_warnings(session=session, dagbag=dagbag)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 680, in update_dag_warnings
+    self._validate_task_pools(dagbag=dagbag)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 79, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/dag_processing/processor.py", line 659, in _validate_task_pools
+    pools = {p.pool for p in Pool.get_pools(session)}
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/utils/session.py", line 76, in wrapper
+    return func(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/pool.py", line 68, in get_pools
+    return session.scalars(select(Pool)).all()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1778, in scalars
+    return self.execute(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/future/engine.py", line 412, in connect
+    return super(Engine, self).connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 497, in checkout
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 495, in checkout
+    dbapi_connection = rec.get_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 630, in get_connection
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/airflow/.local/lib/python3.10/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) connection to server at "postgres" (172.21.0.2), port 5432 failed: FATAL:  the database system is shutting down
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2025-07-11T19:30:25.998+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/ml_pipeline.py took 0.228 seconds

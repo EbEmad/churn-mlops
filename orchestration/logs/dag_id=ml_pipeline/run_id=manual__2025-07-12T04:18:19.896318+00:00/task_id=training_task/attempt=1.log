@@ -1,0 +1,38 @@
+[2025-07-12T04:18:22.475+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-12T04:18:22.515+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_pipeline.training_task manual__2025-07-12T04:18:19.896318+00:00 [queued]>
+[2025-07-12T04:18:22.526+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_pipeline.training_task manual__2025-07-12T04:18:19.896318+00:00 [queued]>
+[2025-07-12T04:18:22.526+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-12T04:18:22.545+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): training_task> on 2025-07-12 04:18:19.896318+00:00
+[2025-07-12T04:18:22.555+0000] {standard_task_runner.py:63} INFO - Started process 365 to run task
+[2025-07-12T04:18:22.559+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'ml_pipeline', 'training_task', 'manual__2025-07-12T04:18:19.896318+00:00', '--job-id', '12', '--raw', '--subdir', 'DAGS_FOLDER/ml_pipeline.py', '--cfg-path', '/tmp/tmpk2b8bqey']
+[2025-07-12T04:18:22.562+0000] {standard_task_runner.py:91} INFO - Job 12: Subtask training_task
+[2025-07-12T04:18:22.621+0000] {task_command.py:426} INFO - Running <TaskInstance: ml_pipeline.training_task manual__2025-07-12T04:18:19.896318+00:00 [running]> on host 9c8ac9649d23
+[2025-07-12T04:18:22.731+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ebrahim Emad' AIRFLOW_CTX_DAG_ID='ml_pipeline' AIRFLOW_CTX_TASK_ID='training_task' AIRFLOW_CTX_EXECUTION_DATE='2025-07-12T04:18:19.896318+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-12T04:18:19.896318+00:00'
+[2025-07-12T04:18:22.732+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-12T04:18:22.750+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-07-12T04:18:22.751+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/scripts/code.py']
+[2025-07-12T04:18:22.768+0000] {subprocess.py:86} INFO - Output:
+[2025-07-12T04:18:24.970+0000] {subprocess.py:93} INFO - Traceback (most recent call last):
+[2025-07-12T04:18:24.971+0000] {subprocess.py:93} INFO -   File "/opt/***/scripts/code.py", line 68, in <module>
+[2025-07-12T04:18:24.972+0000] {subprocess.py:93} INFO -     joblib.dump(scaler, '../models/scaler.pkl')
+[2025-07-12T04:18:24.972+0000] {subprocess.py:93} INFO -   File "/home/***/.local/lib/python3.10/site-packages/joblib/numpy_pickle.py", line 599, in dump
+[2025-07-12T04:18:24.973+0000] {subprocess.py:93} INFO -     with open(filename, "wb") as f:
+[2025-07-12T04:18:24.973+0000] {subprocess.py:93} INFO - FileNotFoundError: [Errno 2] No such file or directory: '../models/scaler.pkl'
+[2025-07-12T04:18:25.269+0000] {subprocess.py:97} INFO - Command exited with return code 1
+[2025-07-12T04:18:25.270+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-12T04:18:25.286+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/baseoperator.py", line 400, in wrapper
+    return func(self, *args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/bash.py", line 243, in execute
+    raise AirflowException(
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 1.
+[2025-07-12T04:18:25.290+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=ml_pipeline, task_id=training_task, run_id=manual__2025-07-12T04:18:19.896318+00:00, execution_date=20250712T041819, start_date=20250712T041822, end_date=20250712T041825
+[2025-07-12T04:18:25.307+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 12 for task training_task (Bash command failed. The command returned a non-zero exit code 1.; 365)
+[2025-07-12T04:18:25.339+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-07-12T04:18:25.365+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-12T04:18:25.368+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

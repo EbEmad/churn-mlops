@@ -1,0 +1,68 @@
+[2025-07-12T04:19:25.035+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-12T04:19:25.079+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: ml_pipeline.training_task manual__2025-07-12T04:19:22.590167+00:00 [queued]>
+[2025-07-12T04:19:25.091+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: ml_pipeline.training_task manual__2025-07-12T04:19:22.590167+00:00 [queued]>
+[2025-07-12T04:19:25.091+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-12T04:19:25.112+0000] {taskinstance.py:2330} INFO - Executing <Task(BashOperator): training_task> on 2025-07-12 04:19:22.590167+00:00
+[2025-07-12T04:19:25.121+0000] {standard_task_runner.py:63} INFO - Started process 412 to run task
+[2025-07-12T04:19:25.126+0000] {standard_task_runner.py:90} INFO - Running: ['***', 'tasks', 'run', 'ml_pipeline', 'training_task', 'manual__2025-07-12T04:19:22.590167+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/ml_pipeline.py', '--cfg-path', '/tmp/tmpxoourx55']
+[2025-07-12T04:19:25.129+0000] {standard_task_runner.py:91} INFO - Job 14: Subtask training_task
+[2025-07-12T04:19:25.202+0000] {task_command.py:426} INFO - Running <TaskInstance: ml_pipeline.training_task manual__2025-07-12T04:19:22.590167+00:00 [running]> on host 9c8ac9649d23
+[2025-07-12T04:19:25.315+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Ebrahim Emad' AIRFLOW_CTX_DAG_ID='ml_pipeline' AIRFLOW_CTX_TASK_ID='training_task' AIRFLOW_CTX_EXECUTION_DATE='2025-07-12T04:19:22.590167+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-12T04:19:22.590167+00:00'
+[2025-07-12T04:19:25.317+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-12T04:19:25.335+0000] {subprocess.py:63} INFO - Tmp dir root location: /tmp
+[2025-07-12T04:19:25.336+0000] {subprocess.py:75} INFO - Running command: ['/usr/bin/bash', '-c', 'python /opt/***/scripts/code.py']
+[2025-07-12T04:19:25.354+0000] {subprocess.py:86} INFO - Output:
+[2025-07-12T04:19:35.055+0000] {subprocess.py:93} INFO - 
+[2025-07-12T04:19:35.056+0000] {subprocess.py:93} INFO -  Evaluation for Logistic Regression
+[2025-07-12T04:19:35.056+0000] {subprocess.py:93} INFO -               precision    recall  f1-score   support
+[2025-07-12T04:19:35.056+0000] {subprocess.py:93} INFO - 
+[2025-07-12T04:19:35.056+0000] {subprocess.py:93} INFO -            0       0.85      0.89      0.87      1035
+[2025-07-12T04:19:35.056+0000] {subprocess.py:93} INFO -            1       0.66      0.56      0.61       374
+[2025-07-12T04:19:35.056+0000] {subprocess.py:93} INFO - 
+[2025-07-12T04:19:35.056+0000] {subprocess.py:93} INFO -     accuracy                           0.81      1409
+[2025-07-12T04:19:35.056+0000] {subprocess.py:93} INFO -    macro avg       0.75      0.73      0.74      1409
+[2025-07-12T04:19:35.057+0000] {subprocess.py:93} INFO - weighted avg       0.80      0.81      0.80      1409
+[2025-07-12T04:19:35.057+0000] {subprocess.py:93} INFO - 
+[2025-07-12T04:19:35.057+0000] {subprocess.py:93} INFO - ROC AUC Score: 0.8419153168513782
+[2025-07-12T04:19:35.057+0000] {subprocess.py:93} INFO - 
+[2025-07-12T04:19:35.057+0000] {subprocess.py:93} INFO -  Evaluation for Random Forest
+[2025-07-12T04:19:35.057+0000] {subprocess.py:93} INFO -               precision    recall  f1-score   support
+[2025-07-12T04:19:35.057+0000] {subprocess.py:93} INFO - 
+[2025-07-12T04:19:35.057+0000] {subprocess.py:93} INFO -            0       0.83      0.88      0.86      1035
+[2025-07-12T04:19:35.057+0000] {subprocess.py:93} INFO -            1       0.61      0.50      0.55       374
+[2025-07-12T04:19:35.058+0000] {subprocess.py:93} INFO - 
+[2025-07-12T04:19:35.058+0000] {subprocess.py:93} INFO -     accuracy                           0.78      1409
+[2025-07-12T04:19:35.058+0000] {subprocess.py:93} INFO -    macro avg       0.72      0.69      0.70      1409
+[2025-07-12T04:19:35.058+0000] {subprocess.py:93} INFO - weighted avg       0.77      0.78      0.78      1409
+[2025-07-12T04:19:35.058+0000] {subprocess.py:93} INFO - 
+[2025-07-12T04:19:35.058+0000] {subprocess.py:93} INFO - ROC AUC Score: 0.8180268154692707
+[2025-07-12T04:19:35.058+0000] {subprocess.py:93} INFO - 
+[2025-07-12T04:19:35.058+0000] {subprocess.py:93} INFO -  Evaluation for KNN
+[2025-07-12T04:19:35.058+0000] {subprocess.py:93} INFO -               precision    recall  f1-score   support
+[2025-07-12T04:19:35.059+0000] {subprocess.py:93} INFO - 
+[2025-07-12T04:19:35.059+0000] {subprocess.py:93} INFO -            0       0.82      0.88      0.85      1035
+[2025-07-12T04:19:35.059+0000] {subprocess.py:93} INFO -            1       0.59      0.48      0.53       374
+[2025-07-12T04:19:35.059+0000] {subprocess.py:93} INFO - 
+[2025-07-12T04:19:35.059+0000] {subprocess.py:93} INFO -     accuracy                           0.77      1409
+[2025-07-12T04:19:35.059+0000] {subprocess.py:93} INFO -    macro avg       0.71      0.68      0.69      1409
+[2025-07-12T04:19:35.059+0000] {subprocess.py:93} INFO - weighted avg       0.76      0.77      0.77      1409
+[2025-07-12T04:19:35.059+0000] {subprocess.py:93} INFO - 
+[2025-07-12T04:19:35.059+0000] {subprocess.py:93} INFO - ROC AUC Score: 0.8122968818620993
+[2025-07-12T04:19:35.059+0000] {subprocess.py:93} INFO - 
+[2025-07-12T04:19:35.060+0000] {subprocess.py:93} INFO -  Evaluation for SVM
+[2025-07-12T04:19:35.060+0000] {subprocess.py:93} INFO -               precision    recall  f1-score   support
+[2025-07-12T04:19:35.060+0000] {subprocess.py:93} INFO - 
+[2025-07-12T04:19:35.060+0000] {subprocess.py:93} INFO -            0       0.83      0.90      0.87      1035
+[2025-07-12T04:19:35.060+0000] {subprocess.py:93} INFO -            1       0.65      0.50      0.57       374
+[2025-07-12T04:19:35.060+0000] {subprocess.py:93} INFO - 
+[2025-07-12T04:19:35.060+0000] {subprocess.py:93} INFO -     accuracy                           0.80      1409
+[2025-07-12T04:19:35.060+0000] {subprocess.py:93} INFO -    macro avg       0.74      0.70      0.72      1409
+[2025-07-12T04:19:35.060+0000] {subprocess.py:93} INFO - weighted avg       0.79      0.80      0.79      1409
+[2025-07-12T04:19:35.060+0000] {subprocess.py:93} INFO - 
+[2025-07-12T04:19:35.061+0000] {subprocess.py:93} INFO - ROC AUC Score: 0.7942739414606422
+[2025-07-12T04:19:35.290+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2025-07-12T04:19:35.290+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-12T04:19:35.307+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=ml_pipeline, task_id=training_task, run_id=manual__2025-07-12T04:19:22.590167+00:00, execution_date=20250712T041922, start_date=20250712T041925, end_date=20250712T041935
+[2025-07-12T04:19:35.340+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-07-12T04:19:35.352+0000] {taskinstance.py:3498} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-07-12T04:19:35.353+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
