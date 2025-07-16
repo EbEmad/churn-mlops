@@ -3,6 +3,11 @@ numpy
 matplotlib
 seaborn
 scikit-learn
-
+uvicorn
+gunicorn
+requests
+pydantic
+sqlmodel
+fastapi[standard]==0.115.11
 
 

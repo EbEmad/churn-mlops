@@ -1,14 +1,21 @@
 version: '3.8'
 
 services:
-  jupyter:
-    build: .
-    ports:
-      - "8888:8888"
-      - "5000:5000"
+  mlflow:
+    build:
+      context: .
+      dockerfile: dockerfile
+    container_name: mlflow
+    hostname: mlflow
     volumes:
       - ./notebooks:/app/notebooks
       - ./models:/app/models
       - ./scripts:/app/scripts
       - ./Data:/app/Data
-    container_name: python_notebook
+      - ./01-intro:/app/01-intro
+      - ./tracking:/app/tracking
+    environment:
+      - MLFLOW_ARTIFACT_ROOT=/app/tracking/mlflow_artifacts
+    ports:
+      - "8000:8000"
+      - "5000:5000"
